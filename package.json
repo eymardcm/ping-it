@@ -2,7 +2,7 @@
   "name": "ping-it",
   "version": "1.0.0",
   "description": "a ping tool",
-  "main": "index.js",
+  "main": "ping-it.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +19,7 @@
   "dependencies": {
     "config": "^3.3.3",
     "ping": "^0.4.0",
+    "postman-request": "^2.88.1-postman.28",
     "yargs": "^16.2.0"
   }
 }
