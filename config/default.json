@@ -1,4 +1,5 @@
 {
+    "ping-interval-in-milliseconds": 10000,
     "targets": {
         "ping": ["google.com", "yahoo.com", "twitter.com", "somebogusdeadsitetosimulatefailure.com", "facebook.com", "instagram.com", "mulesoft.com", "amazon.com"]
     },

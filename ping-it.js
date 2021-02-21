@@ -3,6 +3,7 @@ const config = require('./config/default.json')
 const timeStamp = require('./time-stamp')
 const sendNotification = require('./send-notification')
 
+const pingInterval = config['ping-interval-in-milliseconds']
 const pingTargets = config.targets['ping']
 const emailNotificationIntervalInMilliseconds = (config['email-notification-interval-in-seconds'] * 1000)
 
@@ -38,7 +39,7 @@ function keepAlive(i) {
             });   
         });
         keepAlive(++i);
-    }, 10000)
+    }, pingInterval)
 }
 
 keepAlive(0);
